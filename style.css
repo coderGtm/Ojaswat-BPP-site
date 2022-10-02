@@ -94,6 +94,7 @@ header select option {
     color: white;
     margin-left: 10vw;
     padding: 10px;
+    border-radius: 10px;
 }
 #courseFrame h1 {
     color: #9dc3e6;
@@ -104,4 +105,46 @@ header select option {
 #registerImg {
     margin-left: 60vw;
     background-color: rgba(245, 208, 0, 0.2);
+}
+#enginesDiv {
+    text-align: center;
+}
+#enginesDiv h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #9dc3e6;
+}
+#enginesDisplay {
+    display: flex;
+    flex-wrap: wrap;
+}
+.engineFrame {
+    background-color: black;
+    opacity: .9;
+    width: 20vw;
+    color: white;
+    margin-left: 10vw;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.engineFrame img {
+    width: 19vw;
+    height: 18vw;
+    border-radius: 20px;
+}
+.engineFrame h2 {
+    color: #9dc3e6;
+    font-family: 'Montserrat', sans-serif;
+}
+footer {
+    background-color: black;
+    color: aliceblue;
+    opacity: .7;
+    backdrop-filter: blur(1000px);
+    padding-bottom: 10px;
+    text-align: center;
+}
+footer a {
+    color: aliceblue;
+    padding: 10px;
 }

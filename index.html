@@ -10,7 +10,7 @@
 <body>
     <header>
         <img id="logo" src="assets/logo.webp" alt="">
-        <select name="cv" id="cv">
+        <select name="cv" id="cv" oninput="cvSelected()">
             <option selected disabled hidden>CV</option>
             <option value="engine">Engine</option>
             <option value="differential">Differential</option>
@@ -61,5 +61,73 @@
         </div>
         <img id="registerImg" src="assets/register.png" alt="">
     </div>
+    <div id="enginesDiv">
+        <h1>Engines</h1><br>
+        <div id="enginesDisplay">
+            <div class="engineFrame">
+                <img src="assets/engine1.png" alt="">
+                <h2>Yamaha YZF R6</h2>
+                <p>600 CC</p>
+                <p>₹ 2,71,040</p>
+            </div>
+            <div class="engineFrame">
+                <img src="assets/engine2.png" alt="">
+                <h2>Suzuki GSXR 600</h2>
+                <p>600 CC</p>
+                <p>₹ 2,49,357</p>
+            </div>
+            <div class="engineFrame">
+                <img src="assets/engine3.png" alt="">
+                <h2>KTM 390</h2>
+                <p>390 CC</p>
+                <p>₹ 89,095</p>
+            </div>
+            <div class="engineFrame">
+                <img src="assets/engine4.png" alt="">
+                <h2>Saietta 119</h2>
+                <p>14kW/ 72V</p>
+                <p>₹ 1,31,700</p>
+            </div>
+            <div class="engineFrame">
+                <img src="assets/engine5.jpg" alt="">
+                <h2>Agni 95r</h2>
+                <p>12-30kW/ 72V</p>
+                <p>₹ 2,18,168</p>
+            </div>
+            <div class="engineFrame">
+                <img src="assets/engine6.jpeg" alt="">
+                <h2>EMRAX</h2>
+                <p>109kW/ 500V</p>
+                <p>₹ 4,57,696</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footerFrame">
+            <div id="footerFrame1">
+                <h1>Ojaswat Motorsports</h1>
+                <a href="https://www.instagram.com/ojaswat_motorsports/">Instagram</a>
+                <a href="https://www.facebook.com/OjaswatMotorsports">Facebook</a>
+                <a href="https://www.linkedin.com/company/ojaswat-motorsports">LinkedIn</a>
+                <a href="https://www.youtube.com/channel/UCZ1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1">YouTube</a>
+            </div>
+            <div id="footerFrame2">
+                <h1>Address</h1>
+                <p>CSPIT, CHARUSAT, Nadiad-Petlad Highway, Gujarat</p>
+            </div>
+            <div id="footerFrame3">
+                <h1>Contact Us</h1>
+                <p>Phone: <a href="tel:+919999999999">+91 9999999999</a></p>
+                <p>Email: <a href="mailto:ojaswat@gmail.com">ojaswat@gmail.com</a></p>
+            </div>
+    </footer>
+
+    <script type='text/javascript'>
+        function cvSelected() {
+         var optionValue = document.getElementById("cv").value;
+         if (optionValue=="engine") {location.href = "#enginesDiv"}
+        }
+        </script>
 </body>
 </html>
