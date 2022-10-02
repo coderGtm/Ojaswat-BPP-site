@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-image: url(assets/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+    font-size: 5vh;
+}
+p {
+    font-size: 3vh;
+}
+header {
+    background-color: black;
+    opacity: .7;
+    height: 8vh;
+    backdrop-filter: blur(1000px);
+    padding-bottom: 10px;
+}
+header select {
+    display: inline-block;
+    margin-left: 10vw;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 3vh;
+    width: min-content;
+}
+header select option {
+    background-color: black;
+    opacity: .7;
+    padding: 10px;
+}
+#cv {
+    margin-left: 20vw;
+}
+#logo {
+    filter: brightness(0) invert(1);
+    height: 6vh;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+#aboutDiv {
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: black;
+    opacity: .7;
+    backdrop-filter: blur(1000px);
+    padding: 2vh;
+    border-radius: 10px;
+    color: #fbe5d6;
+    text-align: center;
+}
+#aboutDiv h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+#aboutDiv p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#companiesDiv {
+    margin-top: 2vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: black;
+    opacity: .7;
+    backdrop-filter: blur(1000px);
+    padding: 2vh;
+    border-radius: 10px;
+    text-align: center;
+}
+#companiesDiv h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #9dc3e6;
+}
+#companiesFrame {
+    background-image: url(assets/frame.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 2vw;
+    width: fit-content;
+    margin: 0 auto;
+}
