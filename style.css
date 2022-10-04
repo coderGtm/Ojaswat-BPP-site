@@ -41,6 +41,17 @@ header select option {
     margin-top: 1vh;
     margin-left: 1vw;
 }
+#logo2 {
+    filter: brightness(0) invert(1);
+    height: 20vh;
+    margin: 2vh auto;
+    display: block;
+}
+#logo3 {
+    filter: brightness(0) invert(1);
+    height: 10vh;
+    margin-top: 5vh;
+}
 #aboutDiv {
     margin-top: 10vh;
     margin-left: 10vw;
@@ -88,6 +99,8 @@ header select option {
     height: 100vh;
 }
 #courseFrame {
+    display: inline-block;
+    vertical-align: middle;
     background-color: black;
     opacity: .7;
     width: 30vw;
@@ -99,21 +112,29 @@ header select option {
 #courseFrame h1 {
     color: #9dc3e6;
 }
-#courseFrame p {
+#courseFrame p, #courseFrame ul {
     font-size: 4vh;
 }
-#registerImg {
-    margin-left: 60vw;
-    background-color: rgba(245, 208, 0, 0.2);
+#courseFrame button {
+    display: block;
+    margin: 0 auto;
+    background-color: forestgreen;
+    border: 0;
+    outline: none;
+    font-size: 3vh;
+    color: white;
+    padding: 5px;
+    margin-bottom: 2vh;
 }
-#enginesDiv {
+#enginesDiv, #motorsDiv {
     text-align: center;
+    margin-top: 5vh;
 }
-#enginesDiv h1 {
+#enginesDiv h1, #motorsDiv h1 {
     font-family: 'Montserrat', sans-serif;
     color: #9dc3e6;
 }
-#enginesDisplay {
+#enginesDisplay, #motorsDisplay {
     display: flex;
     flex-wrap: wrap;
 }
@@ -143,6 +164,7 @@ footer {
     backdrop-filter: blur(1000px);
     padding-bottom: 10px;
     text-align: center;
+    margin-top: 5vh;
 }
 footer a {
     color: aliceblue;

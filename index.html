@@ -18,9 +18,9 @@
             <option value="fuel">Fuel Filter</option>
             <option value="valve">Valve</option>
         </select>
-        <select name="ev" id="ev">
+        <select name="ev" id="ev" oninput="evSelected()">
             <option selected disabled hidden>EV</option>
-            <option value="motors">Motors</option>
+            <option value="motor">Motors</option>
             <option value="diff">Differential</option>
             <option value="battery">Battery Pack</option>
             <option value="inverter">Inverter</option>
@@ -42,7 +42,9 @@
             <option value="Guidance">Guidance</option>
         </select>
     </header>
+    
     <div id="aboutDiv">
+        <img id="logo2" src="assets/logo.webp" alt="">
         <h1>About Us</h1>
         <p>We are alumni of a Formula Student team, who are trying to make your work easier by providing you with all the required parts for combustion vehicles as well as electrical vehicles, including the cad files for the bought parts. We also provide you guidance for what parts to use and how to use them in your car, which you will find in the general > guidance section. With that there are courses in vehicle dynamics, engine tuning, Driver training, etc.</p>
     </div>
@@ -58,8 +60,28 @@
         <div id="courseFrame">
             <h1>Courses</h1>
             <p>The courses provided by us begin from a <span style="color: yellow;">very basic level</span> and progressively advance up-to a level which makes the learner capable enough to understand everything related to the topic and also unlock their <span style="color: green;">creative thinking</span> which helps them design and analyze in a more efficient manner.</p>
+            <ul>
+                <li>Aerodynamics and Composites</li>
+                <li>Chassis</li>
+                <li>Electric Vehicles</li>
+                <li>Powertrain</li>
+                <li>Vehicle Dynamics</li>
+            </ul>
+            <button>Register Now</button>
         </div>
-        <img id="registerImg" src="assets/register.png" alt="">
+        <div id="courseFrame">
+            <h1>Race Tracks</h1>
+            <p>The Race Tracks have been constructed in 6 different states of pan India, where you can test your ar with proper setup. <a href="#">Click here to know more...</a></p>
+            <ul>
+                <li>Punjab</li>
+                <li>Delhi</li>
+                <li>Odisha</li>
+                <li>Gujarat</li>
+                <li>Maharashtra</li>
+                <li>Karnataka</li>
+            </ul>
+            <button>Rent a Track</button>
+        </div>
     </div>
     <div id="enginesDiv">
         <h1>Engines</h1><br>
@@ -82,6 +104,12 @@
                 <p>390 CC</p>
                 <p>₹ 89,095</p>
             </div>
+        
+        </div>
+    </div>
+    <div id="motorsDiv">
+        <h1>Motors</h1>
+        <div id="motorsDisplay">
             <div class="engineFrame">
                 <img src="assets/engine4.png" alt="">
                 <h2>Saietta 119</h2>
@@ -106,6 +134,7 @@
     <footer>
         <div id="footerFrame">
             <div id="footerFrame1">
+                <img id="logo3" src="assets/logo.webp" alt="">
                 <h1>Ojaswat Motorsports</h1>
                 <a href="https://www.instagram.com/ojaswat_motorsports/">Instagram</a>
                 <a href="https://www.facebook.com/OjaswatMotorsports">Facebook</a>
@@ -127,6 +156,10 @@
         function cvSelected() {
          var optionValue = document.getElementById("cv").value;
          if (optionValue=="engine") {location.href = "#enginesDiv"}
+        }
+        function evSelected() {
+         var optionValue = document.getElementById("ev").value;
+         if (optionValue=="motor") {location.href = "#motorsDiv"}
         }
         </script>
 </body>
